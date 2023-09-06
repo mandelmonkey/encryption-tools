@@ -2,16 +2,6 @@ var crypto = require("crypto");
 var Buffer = require("buffer/").Buffer;
 const characterArray =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-function getEncryptBytes(encryption) {
-  const bytes = [];
-  const byteArray = encryption.split(",");
-
-  byteArray.forEach((element) => {
-    bytes.push(parseInt(element, 10));
-  });
-
-  return bytes;
-}
 
 function CeaserTotal(charArray) {
   let total = 0;
